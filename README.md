@@ -1,6 +1,6 @@
 # Green-Shade: AI-Driven Urban Heat Mitigation and Cooling Strategy Platform
 
-**Bharatiya Antariksh Hackathon 2026 Submission**
+**Bharatiya Antariksh Hackathon 2026**
 
 **Team Name:** Realm  
 **Team Leader:** Kushagra Singh
