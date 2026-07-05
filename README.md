@@ -1,38 +1,49 @@
-# Green-Shade: Urban Heat Mitigation and Cooling Strategies
+# Green-Shade: AI-Driven Urban Heat Mitigation and Cooling Strategy Platform
 
 **Bharatiya Antariksh Hackathon 2026 Submission**
 
-## 🌍 Overview
-Green-Shade is an innovative platform that focuses on using Artificial Intelligence and Machine Learning to help cities reduce extreme heat and improve cooling strategies. By leveraging data-driven insights—including satellite imagery, weather data, and IoT sensors—we design smarter, more sustainable urban environments.
-
-## 🌡️ The Problem
-Rising heat in urban areas, particularly the **Urban Heat Island (UHI)** effect, is a growing crisis. Surfaces like concrete and asphalt trap heat, making cities significantly hotter than surrounding rural areas. Current mitigation choices are mostly manual and slow, with cost, equity, and feasibility rarely optimized together. Heat maps often describe the past, not the future risk.
-
-## 🚀 The Solution
-Our solution combines satellite, weather, land-use, and ground observations to:
-- Predict ward/locality-level heat hotspots.
-- Recommend ranked cooling strategies with expected impact.
-- Provide an AI-generated cooling priority map.
-- Run "What-if" simulations for trees, cool roofs, water bodies, and shade.
-
-## ✨ Key Features
-- **AI Heat-Risk Maps:** Visualizes Land surface temperature, NDVI, built-up index, and population exposure.
-- **Hotspot Forecasting:** Predicts likely high-risk areas for upcoming days or seasons.
-- **Mitigation Optimizer:** Ranks interventions like cool roofs, tree cover, shade, and reflective roads based on cost and impact.
-- **What-if Simulator:** Shows expected temperature reduction and cost trade-offs for proposed interventions.
-- **Planner Dashboard:** Interactive ward map, priority score, action cards, and downloadable reports for city planners.
-- **Citizen Alerts & Feedback:** Heat-risk alerts and a feedback mechanism for local observations to improve model accuracy.
-
-## 🛠️ Technology Stack
-- **Data & GIS:** ISRO Bhuvan / satellite imagery, OpenWeather/IMD data, QGIS, PostGIS
-- **AI/ML:** Python, Pandas, NumPy, scikit-learn, XGBoost, Random Forest, LSTM/U-Net for spatial patterns
-- **Backend:** FastAPI, REST APIs
-- **Frontend:** React, Leaflet/Mapbox, Chart.js
-- **Deployment:** Docker, Cloud VM
-
-## 🏗️ Getting Started (Coming Soon)
-*Instructions on how to set up and run the project locally will be added here once development begins.*
-
----
 **Team Name:** Realm  
 **Team Leader:** Kushagra Singh
+
+## 🌍 Executive Summary
+Green-Shade is an AI/ML-powered decision-support platform designed to help city planners, municipal teams, and citizens identify urban heat hotspots and choose the most effective cooling strategies. The system combines satellite imagery, weather data, land-use information, IoT/field observations, and population exposure indicators to generate heat-risk maps, forecast future hotspots, simulate cooling interventions, and recommend ranked mitigation actions.
+
+## 🌡️ The Problem
+Urban areas are becoming hotter due to rapid development, loss of vegetation, high building density, dark road surfaces, waste heat, and climate change. This creates the **Urban Heat Island (UHI)** effect. 
+Existing solutions often only describe past heat, lack optimized mitigation planning, and under-prioritize vulnerable populations. Green-Shade moves from mere observation to **prediction and decision-making**.
+
+## 🎯 Target Users
+- **City Planners:** View heat-risk scores, simulate interventions, and approve cooling plans.
+- **Municipal Teams:** Inspect field feasibility and track implementation impact.
+- **Citizens:** Receive heat-risk alerts, find cooling zones, and submit ground-truth feedback.
+- **Disaster Management:** Identify vulnerable zones for emergency response during heatwaves.
+
+## ✨ Core Features
+- **AI Heat-Risk Maps:** Generates ward/grid-level heat-risk scores using LST, NDVI, NDBI, and population exposure.
+- **Hotspot Forecasting:** Predicts likely high-risk areas for upcoming days or seasons.
+- **Mitigation Optimizer:** Ranks cooling interventions (e.g., tree cover, cool roofs, reflective roads) based on impact, cost, and equity.
+- **What-if Simulator:** Tests scenarios before implementation (e.g., "What if tree cover increases by 15%?").
+- **Planner Dashboard:** Interactive city map, hotspot forecast panel, and budget vs. cooling impact charts.
+- **Citizen Alerts & Feedback:** Local heat-risk alerts and mechanisms to report heat discomfort or shade availability.
+
+## 🛠️ Technology Stack
+- **Frontend:** React (Vite), TailwindCSS, Leaflet/Mapbox, Chart.js
+- **Backend:** FastAPI (Python), REST APIs, Uvicorn
+- **AI/ML:** Python, Pandas, NumPy, scikit-learn, XGBoost, SHAP (Explainability)
+- **Data & GIS:** GeoPandas, Rasterio, PostGIS, QGIS (Data sources: ISRO Bhuvan, OpenWeather)
+- **Deployment:** Docker, Docker Compose, Cloud VM
+
+## 🏗️ Getting Started (Coming Soon)
+*Instructions on how to set up, build, and run the Green-Shade platform locally using Docker will be added here once development begins.*
+
+## 🛣️ Development Roadmap
+- **Phase 1:** Project Setup (Monorepo, FastAPI, React+Vite, Docker)
+- **Phase 2:** Mock Data MVP (Interactive maps and dashboard with sample data)
+- **Phase 3:** Simulation Engine (What-if formulas and impact charts)
+- **Phase 4:** ML Model Integration (Heat prediction and hotspot classification)
+- **Phase 5:** Real Geospatial Data Integration (Satellite raster processing)
+- **Phase 6:** Citizen Alerts and Feedback Loop
+- **Phase 7:** Reporting and Final Polish
+
+---
+*For a more detailed breakdown of the architecture, database design, and APIs, refer to the [Plan.md](./Plan.md).*
